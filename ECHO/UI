@@ -1,0 +1,130 @@
+export const handler = async (event) => {
+  // TODO implement
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify('Hello from Lambda!'),
+  };
+  return response;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//github
+git help
+
+git --version
+
+mkdir echo
+
+cd echo
+
+git init
+
+create a text file named Read
+
+git status
+
+git add Read
+
+git config --global user.email <email>
+
+git commit -m "Done"
+
+git config --global user.username nithinnayak1804
+
+git remote add origin https://
+
+git push origin master
+
+File is pushed on github
+
+git clone https://
+
+cd <directory>
+
+vim read.txt
+
+git add Read.txt
+
+git status
+
+git commit -m ""
+
+git push origin master
+
+//docker-architecture
+Create an instance - create a key pair with ppk format
+Give host name- public ip
+Select ssh-auth-credentials-browse
+
+sudo su
+Yum update -y
+Yum install docker -y
+Service docker start 
+Sudo usermod -a -G docker ec2-user
+Systemctl enable docker
+Service docker status 
+Docker info
+Docker images 
+Docker pull ubuntu
+Docker run -it -d ubuntu
+Docker ps
+Docket ps -a
+Docker exec -it <container-id> bash
+Exit
+
+Docker run hello-world
+Docker pull alpine
+Docker images
+
+//build image for sample application 
+echo2-instance- putty-login as ec2-user
+sudo su
+yum update -y
+yum install docker -y
+service docker status
+
+//making a directory which contains the code
+mkdir html-app
+cd html-app
+touch index.html
+ls
+nano index.html
+html : <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <h1>I am a WEB DEVELOPER</h1>
+</body>
+</html>
+cat index.html
+//create and configure docker file
+vim Dockerfile
+FROM httpd
+COPY ./ /usr/local/apache2/htdocs
+//Build an image for doker file
+docker build -t html-app
+docker images
+//Run Images
+docker run -itd -p 80:80 -name html-app html-app
+docker ps
+//copy the public ip of instance and run in the browser
