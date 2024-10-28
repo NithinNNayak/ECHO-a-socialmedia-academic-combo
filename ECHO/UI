@@ -92,6 +92,9 @@ Docker run hello-world
 Docker pull alpine
 Docker images
 
+
+
+
 //build image for sample application 
 echo2-instance- putty-login as ec2-user
 sudo su
